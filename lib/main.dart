@@ -21,6 +21,7 @@ class _AppState extends State<App> {
       darkTheme: ThemeData.dark(
         useMaterial3: true,
       ),
+      theme: ThemeData(),
       home: const SplashScreen(),
     );
   }

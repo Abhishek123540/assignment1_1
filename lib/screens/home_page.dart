@@ -20,6 +20,7 @@ class MyHomePage extends StatelessWidget {
                   fontSize: 36,
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
+                  fontFamily: 'Avenir',
                 ),
               )
             ],
