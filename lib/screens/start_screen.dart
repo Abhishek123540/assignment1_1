@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class MyHomePage extends StatelessWidget {
                   color: Colors.white,
                   fontFamily: 'Avenir',
                 ),
-              )
+              ),
             ],
           ),
         ),
