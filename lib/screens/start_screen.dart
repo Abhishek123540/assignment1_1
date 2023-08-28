@@ -44,6 +44,16 @@ class StartScreen extends StatelessWidget {
                           TextStyle(color: Colors.white, fontFamily: 'Avenir'),
                     ),
                   ),
+                  SizedBox(width: 10),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Sign In'),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll(
+                        Colors.purple,
+                      ),
+                    ),
+                  ),
                 ],
               )
             ],
