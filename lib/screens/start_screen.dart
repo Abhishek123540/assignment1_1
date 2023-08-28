@@ -7,7 +7,7 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         child: Center(
           child: Column(
             children: [
@@ -38,7 +38,7 @@ class StartScreen extends StatelessWidget {
                 children: [
                   OutlinedButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Resgister',
                       style:
                           TextStyle(color: Colors.white, fontFamily: 'Avenir'),
