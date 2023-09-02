@@ -1,4 +1,4 @@
-import 'package:assignment1_1/screens/home_page.dart';
+import 'package:assignment1_1/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -11,7 +11,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _navigateToHome();
   }
@@ -23,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const MyHomePage()),
+      MaterialPageRoute(builder: (context) => const StartScreen()),
     );
   }
 
