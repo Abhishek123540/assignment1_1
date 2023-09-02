@@ -1,3 +1,4 @@
+import 'package:assignment1_1/screens/register_screen.dart';
 import 'package:assignment1_1/screens/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +46,10 @@ class StartScreen extends StatelessWidget {
                       borderRadius: const BorderRadius.all(Radius.circular(12)),
                     ),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (ctx) => ResgisterScreen()));
+                      },
                       child: const Text(
                         'Resgister',
                         style: TextStyle(
