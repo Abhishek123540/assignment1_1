@@ -1,3 +1,4 @@
+import 'package:assignment1_1/screens/my_devices_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'sign_in_screen.dart';
@@ -56,7 +57,12 @@ class ResgisterScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (ctx) => const MyDevicesScreen()));
+                },
                 child: const Text(
                   'Connect To Metamask',
                   style: TextStyle(
@@ -82,7 +88,7 @@ class ResgisterScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (ctx) => const SignInScreen()));
                   },
                   child: const Text(

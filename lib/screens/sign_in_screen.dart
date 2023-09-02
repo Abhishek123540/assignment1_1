@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'my_devices_screen.dart';
 import 'register_screen.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -39,7 +40,12 @@ class SignInScreen extends StatelessWidget {
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.054),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const MyDevicesScreen()));
+              },
               child: Container(
                 decoration: BoxDecoration(
                   border: Border.all(
@@ -83,7 +89,7 @@ class SignInScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (ctx) => const ResgisterScreen()));
                   },
                   child: const Text(
