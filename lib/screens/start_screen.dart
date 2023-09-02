@@ -36,21 +36,40 @@ class StartScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  OutlinedButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'Resgister',
-                      style:
-                          TextStyle(color: Colors.white, fontFamily: 'Avenir'),
+                  Container(
+                    height: 56,
+                    width: 110,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white),
+                      borderRadius: const BorderRadius.all(Radius.circular(12)),
+                    ),
+                    child: TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Resgister',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Avenir',
+                        ),
+                      ),
                     ),
                   ),
-                  SizedBox(width: 10),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text('Sign In'),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStatePropertyAll(
-                        Colors.purple,
+                  const SizedBox(width: 10),
+                  Container(
+                    height: 56,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.purple[900],
+                      borderRadius: const BorderRadius.all(Radius.circular(12)),
+                    ),
+                    child: TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Sign In',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Avenir',
+                        ),
                       ),
                     ),
                   ),
