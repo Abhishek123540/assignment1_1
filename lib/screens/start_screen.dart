@@ -48,7 +48,7 @@ class StartScreen extends StatelessWidget {
                     child: TextButton(
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (ctx) => ResgisterScreen()));
+                            builder: (ctx) => const ResgisterScreen()));
                       },
                       child: const Text(
                         'Resgister',
@@ -70,7 +70,7 @@ class StartScreen extends StatelessWidget {
                     child: TextButton(
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (ctx) => SignInScreen()));
+                            builder: (ctx) => const SignInScreen()));
                       },
                       child: const Text(
                         'Sign In',

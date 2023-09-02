@@ -11,8 +11,13 @@ class SignInScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image.asset(
-              "assets/images/Frame 104.png",
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.5,
+              width: MediaQuery.of(context).size.width,
+              child: Image.asset(
+                'assets/images/Frame 104.png',
+                fit: BoxFit.fitWidth,
+              ),
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.024),
             const Text(
@@ -78,8 +83,8 @@ class SignInScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (ctx) => ResgisterScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (ctx) => const ResgisterScreen()));
                   },
                   child: const Text(
                     'Sign Up',
