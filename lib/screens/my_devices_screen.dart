@@ -13,13 +13,26 @@ class _MyDevicesScreenState extends State<MyDevicesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "My Devices",
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w800,
-            fontFamily: "Avenir",
-          ),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              height: 75,
+              width: 75,
+              child: Image.asset(
+                'assets/images/Frame 104.png',
+                fit: BoxFit.fitHeight,
+              ),
+            ),
+            Text(
+              "My Devices",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontFamily: "Avenir",
+              ),
+            ),
+          ],
         ),
       ),
       body: SingleChildScrollView(
@@ -27,7 +40,9 @@ class _MyDevicesScreenState extends State<MyDevicesScreen> {
           children: [
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(),
+              child: Row(
+                children: [],
+              ),
             )
           ],
         ),

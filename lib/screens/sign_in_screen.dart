@@ -1,6 +1,5 @@
+import 'package:assignment1_1/screens/circular_loading_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'my_devices_screen.dart';
 import 'register_screen.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -44,7 +43,7 @@ class SignInScreen extends StatelessWidget {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (ctx) => const MyDevicesScreen()));
+                        builder: (ctx) => const CircularLoadingScreen()));
               },
               child: Container(
                 decoration: BoxDecoration(

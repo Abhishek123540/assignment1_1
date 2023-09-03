@@ -1,6 +1,6 @@
-import 'package:assignment1_1/screens/my_devices_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'circular_loading_screen.dart';
 import 'sign_in_screen.dart';
 
 class ResgisterScreen extends StatelessWidget {
@@ -61,7 +61,7 @@ class ResgisterScreen extends StatelessWidget {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (ctx) => const MyDevicesScreen()));
+                          builder: (ctx) => const CircularLoadingScreen()));
                 },
                 child: const Text(
                   'Connect To Metamask',
